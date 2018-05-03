@@ -1,0 +1,134 @@
+
+    <!--个人信息查看及设置-->
+
+    <div class="infoBox">
+    <!--头部导航信息-->
+        <ul class="clearfix">
+            <li class=" check" id="info">个人信息</li>
+            <li>我的订单</li>
+            <li>我的出售</li>
+            <li>个人账户</li>
+            <li class="system">系统消息<p class="systemMes"><span>0</span></p></li>
+        </ul>
+    </div>
+    <div>
+    <!--个人信息-->
+    <div class="personInfo dispear">
+    </div>
+    <!--我的订单-->
+    <div class="myOder dispear">
+        <table>
+                <thead>
+                <tr>
+                    <th>订单信息</th>
+                    <th>金额</th>
+                    <th>下单时间</th>
+                    <th>送货时间</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+
+            </tbody>
+        </table>
+
+        <!--返回按钮-->
+        <div class="submitBox">
+            <button type="button" class="submit backBtn" style="cursor: pointer">返回</button>
+        </div>
+    </div>
+
+    <!--删除按钮弹出框-->
+    <div class="popupBox" id="popupBox">
+        <div class="popupBoxTop">
+            <p>删除订单</p>
+        </div>
+        <div class="popupBoxMiddle">
+            <p>您是否要删除该订单信息？删除后不再显示该订单。</p>
+        </div>
+        <div class="popupBoxBottom">
+            <button type="button" class="sure">确定</button>
+            <button type="button" class="close" style="margin-left: 87px">取消</button>
+        </div>
+    </div>
+
+    <!--我的出售-->
+    <div  class="mySell dispear">
+            <div class="mySellBtn">
+                <button type="button">我的出售</button>
+            </div>
+            <table style="margin: 25px 0 0 24px">
+                <thead>
+                <tr>
+                    <th>订单信息</th>
+                    <th>售卖金额</th>
+                    <th>提交时间</th>
+                    <th>上架时间</th>
+                    <th>商品存储</th>
+                    <th>商品状态</th>
+                    <th>是否回款</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+
+
+                </tbody>
+            </table>
+            <div class="state clearfix">
+                <p class="fr">操作须知：审核未通过的订单请查看系统消息修改重新上传；
+                    <br>
+                    每个订单仅能使用一次降价申请功能，如有疑问请联系客服。
+                </p>
+            </div>
+        </div>
+    <!--个人账户-->
+    <div class="personAccount dispear">
+            <p>个人账户</p>
+            <div class="accountTxt_com clearfix" style="height: 190px;padding: 50px 80px;background: white;">
+                <div class="accountTxt_left fl">
+                    <p>我的积分</p>
+                    <div class="score">
+                        <span>200</span>
+                        <span>分</span>
+                    </div>
+                </div>
+
+                <div class="accountTxt_middle fl">
+                    <p>您在户里网的任意消费都可获得积分，积分可直接抵扣商品金额</p>
+                </div>
+                <div class="accountTxt_bottom fr">
+                    <span>查看</span>
+                    <span id="rule">积分规则</span>
+                </div>
+            </div>
+        </div>
+    <!--系统消息-->
+    <div class="systemMegessBox dispear">
+            <div class="systemMegess">
+                <p>系统消息</p>
+                <div class="messageBox">
+
+                </div>
+
+            </div>
+            <div  class="systemMegessBottom">
+                <button type="button">删&nbsp;&nbsp;&nbsp;&nbsp;除</button>
+            </div>
+        </div>
+
+    <!--删除按钮未选内容弹出框-->
+        <div class="popupBox popupBoxDel">
+            <div class="popupBoxMiddle">
+                <p>您还没有标记要删除的消息，请至少标记
+                    一条消息再执行该操作。</p>
+            </div>
+            <div class="popupBoxBottom popupBoxYes">
+                <button type="button" class="yes">确定</button>
+            </div>
+        </div>
+        <!--遮罩层-->
+    <div class="maskLayer"></div>
+    </div>
+    <script src="js/personInfo.js"></script>

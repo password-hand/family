@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>户里·家</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="plugin/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<!--头部-->
+<header>
+    <div class="headerTop">
+        <!-- 头部背景 -->
+        <div class="header_bg">
+            <img src="images/bg_header.jpg" style="width: 1240px">
+        </div>
+        <!-- 联系我们横标按钮 -->
+        <a href="index.html" class="contUS_mark"></a>
+        <!-- logo-->
+        <div class="logo">
+            <!-- 返回首页链接按钮 -->
+            <a href="#"></a>
+        </div>
+        <!-- 登录按钮（用户名）&& 购物车 -->
+        <div class="loginOrShop">
+            <!-- 登录按钮 -->
+            <a class="login"></a>
+            <a class="pesnName"></a>
+            <!-- 分隔线 -->
+            <span class="gapLine"></span>
+            <!-- 购物车 -->
+            <a class="shopping hasRreasure">
+                <!-- 宝贝数量 -->
+                <span class="treasCount">3</span>
+            </a>
+            <!-- 购物车内容 -->
+            <div class="treas_brief" style="display: none">
+                <div class="treas_brief-content">
+                    <p>
+                        <span class="treas_name"><a href="#">9成新转角沙发超级转角沙发</a></span>
+                        <span class="treas_price">9999</span>
+                        <span class="treas_count">x2</span>
+                    </p>
+                    <p>
+                        <span class="treas_name"><a href="#">3成新超级大茶几</a></span>
+                        <span class="treas_price">9999</span>
+                        <span class="treas_count">x2</span>
+                    </p>
+                    <p>
+                        <span class="treas_name"><a href="#">7成新超级电视贵</a></span>
+                        <span class="treas_price">9999</span>
+                        <span class="treas_count">x2</span>
+                    </p>
+                </div>
+                <div class="treas_brief-goto">
+                    <a>查看购物车</a>
+                </div>
+            </div>
+        </div>
+        <!-- 地区选择 -->
+        <div class="seletc_custom">
+            <i title="成都地区">成都地区</i>
+            <dl class="selectDl" style="width: 146px; margin-left: -7px; display: none;">
+                <dt title="成都地区">成都地区</dt>
+                <dt title="北京地区">北京地区</dt>
+                <dt>上海地区</dt>
+                <dt>深圳地区</dt>
+                <dt>其他地区</dt>
+            </dl>
+        </div>
+    </div>
+</header>
+<!--nav-->
+<nav class="navBar">
+    <div class="container">
+        <ul class="clearfix">
+            <li>
+                <a href="javascript:;" id="sofa">沙发&nbsp;&nbsp;&nbsp;SOFAS</a>
+                <div class="hiddenList">
+                    <a href="javascript:void(0)">单人位</a>
+                    <a href="javascript:void(0)">双人位</a>
+                    <a href="javascript:void(0)">三人位</a>
+                    <a href="javascript:void(0)">休闲沙发</a>
+                    <a href="javascript:void(0)">转角沙发</a>
+                </div>
+            </li>
+            <li style="border-color: transparent;">
+                <a href="javascript:;" id="table">桌椅&nbsp;&nbsp;&nbsp;TABLES/CHAIRS</a>
+                <div class="hiddenList table clearfix" style="display: none;">
+                    <a href="javascript:void(0)">餐桌</a>
+                    <a href="javascript:void(0)">餐椅</a>
+                    <a href="javascript:void(0)">书桌</a>
+                    <a href="javascript:void(0)">凳子</a>
+                    <a href="javascript:void(0)">电脑桌</a>
+                    <a href="javascript:void(0)">休闲椅</a>
+                    <a href="javascript:void(0)">梳妆台</a>
+                    <a href="javascript:void(0)">户外椅</a>
+                    <a href="javascript:void(0)" style="margin-left: 68px">其他</a>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:;" id="bed">床&nbsp;&nbsp;&nbsp;BEDS</a>
+                <div class="hiddenList">
+                    <a href="javascript:void(0)">1.5米</a>
+                    <a href="javascript:void(0)">1.8米</a>
+                    <a href="javascript:void(0)">其他</a>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:;" id="storage">柜&nbsp;&nbsp;&nbsp;STORAGE</a>
+                <div class="hiddenList bed clearfix">
+                    <a href="javascript:void(0)">衣柜</a>
+                    <a href="javascript:void(0)">储物柜</a>
+                    <a href="javascript:void(0)">书柜</a>
+                    <a href="javascript:void(0)">电视柜</a>
+                    <a href="javascript:void(0)">鞋柜</a>
+                    <a href="javascript:void(0)">床头柜</a>
+                    <a href="javascript:void(0)" style="margin-left: 48px">其他</a>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:;" id="more">更多&nbsp;&nbsp;&nbsp;MORE</a>
+                <div class="hiddenList">
+                    <a href="javascript:void(0)">组合产品</a>
+                    <a href="javascript:void(0)">日用家居</a>
+                    <a href="javascript:void(0)">家居饰品</a>
+                    <a href="javascript:void(0)">其他</a>
+                </div>
+            </li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="搜索">
+            <i></i>
+        </div>
+    </div>
+</nav>
+<script src="js/nav.js"></script>
+<!--主体内容-->
+<main>
+    <div class="mainbody" style="display: block">
+    <!--标题-->
+<div class="title">
+    <p></p>
+</div>
+    <!--内容信息-->
+    <!--内容信息分为上中下三部分-->
+    <div class="content">
+        <!--上部分内容-->
+    <div class="contentTop clearfix">
+        <!--轮播图-->
+        <div class="carouselBox fl">
+            <img src="images/example_1.jpg" class="show">
+            <img src="images/example_1a.jpg">
+            <img src="images/example_1b.jpg">
+            <img src="images/example_1c.jpg">
+            <ul class="list clearfix">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="fr">
+            <img src="images/example_0.jpg">
+        </div>
+    </div>
+        <!--中间部分内容-->
+        <div class="contentMiddle clearfix">
+            <div class="leftBox fl">
+                <img src="images/example_0.jpg">
+                <img src="images/example_0.jpg" style="margin-top: 34px">
+            </div>
+
+            <div class="middleBox fl">
+                <img src="images/example_2.jpg">
+            </div>
+
+            <div class="rightBox fr">
+                <img src="images/example_0.jpg">
+                <img src="images/example_0.jpg" style="margin-top: 34px">
+            </div>
+        </div>
+        <!--下部分内容-->
+        <div class="contentBottom clearfix">
+        <div class="leftBox fl">
+            <iframe src="http://image.baidu.com/" class="ifra"></iframe>
+        </div>
+        <div class="rightBox fl">
+            <img src="images/example_14.jpg" class="pic">
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="show_box"></div>
+</main>
+<!--底部-->
+<footer>
+    <!-- 下部分标语 -->
+    <div class="footer_title">生活要过得朴素而有味道，但不用过得奢华。</div>
+    <!-- 宣传关键词标签 -->
+    <div class="footer_mark">
+        <div class="footer_mark-keyword">
+            <i>环保</i>
+            <span>无甲醛 大自然</span>
+        </div>
+        <div class="footer_mark-keyword">
+            <i>低价</i>
+            <span>低于购买价6折</span>
+        </div>
+        <div class="footer_mark-keyword">
+            <i>安全</i>
+            <span>专业清洁消毒处理</span>
+        </div>
+        <div class="footer_mark-keyword">
+            <i>省心</i>
+            <span>专业物流配送安装</span>
+        </div>
+        <div class="footer_mark-keyword">
+            <i>快捷</i>
+            <span>24小时内送货</span>
+        </div>
+    </div>
+    <!-- footer信息 -->
+    <div class="footer_info">
+        <!-- 第一列 -->
+        <div class="footer_info-content">
+            <h2>关于我们</h2>
+            <p>
+                <a href="#" target="_self">关于户里</a>
+                <a href="#" target="_self">注册协议</a>
+            </p>
+            <p>
+                <a href="#" target="_self">业务合作</a>
+                <a href="#" target="_self">免责声明</a>
+            </p>
+            <p>
+                <a href="#" target="_self">加入户里</a>
+                <a href="#" target="_self">隐私保护</a>
+            </p>
+        </div>
+        <!-- 第二列 -->
+        <div class="footer_info-content">
+            <h2>流程指南</h2>
+            <p>
+                <a href="#" target="_self">购买家具</a>
+                <a href="#" target="_self">出售家具</a>
+            </p>
+            <p>
+                <a href="#" target="_self">支付方式</a>
+                <a href="#" target="_self">配送安装</a>
+            </p>
+            <p>
+                <a href="#" target="_self">售后保障</a>
+            </p>
+        </div>
+        <!-- 第三列 -->
+        <div class="footer_info-content">
+            <h2>会员中心</h2>
+            <p>
+                <a href="#" target="_self">会员计划</a>
+            </p>
+            <p>
+                <a href="#" target="_self">积分规则</a>
+            </p>
+            <p>
+                <a href="#" target="_self">投诉建议</a>
+            </p>
+        </div>
+        <!-- 第四列 -->
+        <div class="footer_info-content">
+            <h2>联系客服</h2>
+            <p class="h-14">
+                <span>电话:</span><br>
+                <span>028-67635062</span>
+            </p>
+            <p class="h-14">
+                <span>邮箱:</span><br>
+                <span>hello@hulihome.com</span>
+            </p>
+        </div>
+        <!-- 第五列 -->
+        <div class="footer_info-content">
+            <p>
+                <i class="sina_logo-small"></i>
+                <span>新浪微博@户里网</span>
+            </p>
+            <div class="sina_rqcode-small">
+
+            </div>
+        </div>
+        <!-- 第六列 -->
+        <div class="footer_info-content addBorder">
+            <p>
+                <i class="weixin_logo-small"></i>
+                <span>关注微信“户里网”</span>
+            </p>
+            <div class="sina_rqcode-small">
+
+            </div>
+        </div>
+        <!-- 网站备案信息 -->
+        <div class="footer_copyright">蜀ICP备15028224号&nbsp;&nbsp;成都户里科技有限公司</div>
+    </div>
+</footer>
+<script src="js/common.js"></script>
+</body>
+</html>

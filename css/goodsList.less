@@ -1,0 +1,56 @@
+/*
+功能：商品列表部分less
+*/
+.goodsList{
+  width: 1190px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 138px;
+  overflow: hidden;
+
+  a{
+    width: 366px;
+    margin-right: 46px;
+    margin-bottom: 26px;
+    border: 3px solid transparent;
+    color: #333;
+    overflow: hidden;
+    transition: border-color,background-color 0.6s,0.6s;
+    float: left;
+    &:hover{
+      border-color: #82c353;
+    }
+
+    .goodsImg{
+      width: 366px;
+      height: 366px;
+      background-color: #acacac;
+      overflow: hidden;
+    }
+
+
+  }
+}
+.goodsBaseInfo{
+  height: 64px;
+  line-height: 64px;
+  white-space: nowrap;
+  text-align: center;
+  span{
+    display: inline;
+  }
+
+  span.goodsName{
+    font-size: 18px;
+  }
+
+  span.goodsPrice{
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 16px;
+    .newPrice{
+      margin-left: 16px;
+      color: #d8170e;
+    }
+  }
+}
